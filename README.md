@@ -39,4 +39,3 @@ b.	Solution : Nous avons créé un programme qui permet de stocker nos données 
 a.	Solution : utilisation de la bibliothèque Datetime et Pytz reformater la donnée et pouvoir l’utiliser dans nos programmes.
 Conclusion : 
 Nous avons affichés nos conclusion dans la partie dataViz de Streamlit, malheureusement, nous n’avons pas assez de données pour donner des conclusions concrètes.
-![image](https://user-images.githubusercontent.com/81169054/214906832-efc40eb2-674e-4eb0-9716-ba43527483ff.png)
