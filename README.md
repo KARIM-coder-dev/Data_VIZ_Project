@@ -28,16 +28,16 @@ Fichiers :
 2.	Météo.py : Fichier dans lequel nous instancions notre interface web Streamlit, et que nous simulons toutes les opération CRUD
 3.	Vélib.py : Fichier dans lequel nous nous connectons à l’API Velib pour récupérer les données relatives à la station pour différentes villes en temps réel.
 4.	Visualisation.py : Fichier dans lequel nous affichons différents graphiques à savoir :
-a.	Répartition des températures par ville : Ce graphique montrera la variation de température par ville. On récupère les données de notre base de données, les trie par nom de ville et affiche les variations de température dans un graphique de ligne avec le nom de la ville sur l'axe des X et la température sur l'axe des Y. 
-b.	Nombre de vélos disponibles par borne : Ce graphique montrera le nombre des vélos disponible sur chaque borne. Chaque bar représente le nombre des vélos par bornes.
-c.	Top 10 des stations qui contiennent le plus de vélos disponibles + Comparaison entre Vélos électriques et mécaniques
-d.	Répartition des stations de vélib par adresses : graphique en carte
-Problématiques rencontrées :
-1.	Historiques manquants : Ceci est le premier souci que nous avons rencontré, en effet, les API que nous avons trouvée ne fournissait que les données en temps réel : 
-a.	Exemple : API Météo : à chaque appel de cette API nous récupérons seulement les données de la météo relatives à la date et l’heure de l’appel de l’API
-b.	Solution : Nous avons créé un programme qui permet de stocker nos données en live de manière différée dans le temps ce qui nous a permis d’avoir un historique de la météo pour différentes villes  pour la ville de Paris par exemple nous avons la possibilité de retournée la température de différentes dates antérieure à la date actuelle.
-2.	Qualité de la donnée : Nous avons vite rencontré des problématiques concernant le formatage des données par exemple pour les données de la météo, la date était stockée en chaine de caractère, ce qui rendait nos aggregate compliqué à coder
-a.	Solution : utilisation de la bibliothèque Datetime et Pytz reformater la donnée et pouvoir l’utiliser dans nos programmes.
+  a.	Répartition des températures par ville : Ce graphique montrera la variation de température par ville. On récupère les données de notre base de données, les trie par nom de ville et affiche les variations de température dans un graphique de ligne avec le nom de la ville sur l'axe des X et la température sur l'axe des Y. 
+  b.	Nombre de vélos disponibles par borne : Ce graphique montrera le nombre des vélos disponible sur chaque borne. Chaque bar représente le nombre des vélos par bornes.
+  c.	Top 10 des stations qui contiennent le plus de vélos disponibles + Comparaison entre Vélos électriques et mécaniques
+  d.	Répartition des stations de vélib par adresses : graphique en carte
+  Problématiques rencontrées :
+  1.	Historiques manquants : Ceci est le premier souci que nous avons rencontré, en effet, les API que nous avons trouvée ne fournissait que les données en temps réel : 
+  a.	Exemple : API Météo : à chaque appel de cette API nous récupérons seulement les données de la météo relatives à la date et l’heure de l’appel de l’API
+  b.	Solution : Nous avons créé un programme qui permet de stocker nos données en live de manière différée dans le temps ce qui nous a permis d’avoir un historique de la météo pour différentes villes  pour la ville de Paris par exemple nous avons la possibilité de retournée la température de différentes dates antérieure à la date actuelle.
+  2.	Qualité de la donnée : Nous avons vite rencontré des problématiques concernant le formatage des données par exemple pour les données de la météo, la date était stockée en chaine de caractère, ce qui rendait nos aggregate compliqué à coder
+  a.	Solution : utilisation de la bibliothèque Datetime et Pytz reformater la donnée et pouvoir l’utiliser dans nos programmes.
 
 Conclusion : 
 Nous avons affichés nos conclusion dans la partie dataViz de Streamlit, malheureusement, nous n’avons pas assez de données pour donner des conclusions concrètes.
