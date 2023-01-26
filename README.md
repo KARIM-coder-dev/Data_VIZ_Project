@@ -1,4 +1,5 @@
 ReadMe :
+
 Equipe : 
 Nabil HATRI , Karim Marzouk , Rabii Ben Ouirane , Redha REMILI
 Idée derrière le projet :
@@ -37,5 +38,6 @@ a.	Exemple : API Météo : à chaque appel de cette API nous récupérons seulem
 b.	Solution : Nous avons créé un programme qui permet de stocker nos données en live de manière différée dans le temps ce qui nous a permis d’avoir un historique de la météo pour différentes villes  pour la ville de Paris par exemple nous avons la possibilité de retournée la température de différentes dates antérieure à la date actuelle.
 2.	Qualité de la donnée : Nous avons vite rencontré des problématiques concernant le formatage des données par exemple pour les données de la météo, la date était stockée en chaine de caractère, ce qui rendait nos aggregate compliqué à coder
 a.	Solution : utilisation de la bibliothèque Datetime et Pytz reformater la donnée et pouvoir l’utiliser dans nos programmes.
+
 Conclusion : 
 Nous avons affichés nos conclusion dans la partie dataViz de Streamlit, malheureusement, nous n’avons pas assez de données pour donner des conclusions concrètes.
